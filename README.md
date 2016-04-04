@@ -32,7 +32,7 @@
 <br>µ(F, “ ∨ ”<AT><OT Tail>) = µ(γ(<AT>),<OT Tail>)
 <br>η(b, ε) = b (where b ∈ {T, F})
 <br>η(F, “ ∧ ”<L><AT Tail>) = F
-<br>η(T, “ ∧ ”<Li><AT Tail>) = η(φ(<L>),<AT Tail>)
+<br>η(T, “ ∧ ”<L><AT Tail>) = η(φ(<L>),<AT Tail>)
 <br>φ(“ ∼ ”<L>) = if φ(<L>) = T then F else if φ(<L>) = F then T
 <br>φ(<A>) = ψ(<A>)
 <br>ψ(“T”) = T
