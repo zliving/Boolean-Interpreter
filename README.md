@@ -3,9 +3,9 @@
 
 
 <p><b>Syntax: </b>
-<br>[B] ::= [IT].                                 {∼, T, F,(}
-<br>[IT] ::= [OT] [IT Tail]                       {∼, T, F,(}
-<br>[IT Tail] ::= − ] [OT] [IT Tail]              {− ]}
+<br>[B] ::= [IT].                                {∼, T, F,(}
+<br>[IT] ::= [OT] [IT Tail]                      {∼, T, F,(}
+<br>[IT Tail] ::= − ] [OT] [IT Tail]             {− ]}
 <br>::= ε {.,)}
 <br>[OT] ::= [AT] [OT Tail] {∼, T, F,(}
 <br>[OT Tail] ::= ∨ [AT] [OT Tail] {∨}
@@ -19,7 +19,7 @@
 <br>::= F {F}
 <br>::= ( [IT] ) {(}
 </p>
-Syntactic Domains:
+<p><b>Syntactic Domains:</b>
 <br>[B] : Bool stmt
 <br>[IT] : Imply term
 <br>[OT] : Or term
@@ -29,6 +29,7 @@ Syntactic Domains:
 <br>[AT Tail] : And tail
 <br>[L] : Literal
 <br>[A] : Atom
+</p>
 <p><b>Semantic Domain:</b>
 <br>b = {T.F} (Boolean values True and False)</p>
 
