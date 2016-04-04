@@ -65,3 +65,7 @@
 <br>ψ(“F”) = F
 <br>ψ(“(”<IT>“)”) = (β(<IT>))
 </p>
+
+Credits:
+Interpreter written by: Zach Livingston
+Syntax and Semantics written by: Dr.Richard Watson
