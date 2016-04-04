@@ -3,21 +3,21 @@
 
 
 <p><b>Syntax: </b>
-<br>[B] ::= [IT].                                {∼, T, F,(}
-<br>[IT] ::= [OT] [IT Tail]                      {∼, T, F,(}
-<br>[IT Tail] ::= − ] [OT] [IT Tail]             {− ]}
-<br>::= ε {.,)}
-<br>[OT] ::= [AT] [OT Tail] {∼, T, F,(}
-<br>[OT Tail] ::= ∨ [AT] [OT Tail] {∨}
-<br>::= ε {− ], .,)}
-<br>[AT] ::= [L] [AT Tail] {∼, T, F,(}
-<br>[AT Tail] ::= ∧ [L] [AT Tail] {∧}
-<br>::= ε {∨, − ], .,)}
-<br>[L] ::= [A] {T, F,(}
-<br>::= ∼ [L] {∼}
-<br>[A] ::= T {T}
-<br>::= F {F}
-<br>::= ( [IT] ) {(}
+<br>[B] ::= [IT].                               
+<br>[IT] ::= [OT] [IT Tail]                     
+<br>[IT Tail] ::= − ] [OT] [IT Tail]          
+<br>::= ε 
+<br>[OT] ::= [AT] [OT Tail] 
+<br>[OT Tail] ::= ∨ [AT] [OT Tail] 
+<br>::= ε 
+<br>[AT] ::= [L] [AT Tail] 
+<br>[AT Tail] ::= ∧ [L] [AT Tail] 
+<br>::= ε 
+<br>[L] ::= [A] 
+<br>::= ∼ [L] 
+<br>[A] ::= T
+<br>::= F 
+<br>::= ( [IT] )
 </p>
 <p><b>Syntactic Domains:</b>
 <br>[B] : Bool stmt
