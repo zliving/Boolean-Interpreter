@@ -2,8 +2,33 @@
 <p>This is a basic boolean interpreter that evaluates simple boolean expressions and retruns the result. </p>
 
 
-<p><b>Syntax: </b></p>
-
+<p><b>Syntax: </b>
+<br>[B] ::= [IT].                                 {∼, T, F,(}
+<br>[IT] ::= [OT] [IT Tail]                       {∼, T, F,(}
+<br>[IT Tail] ::= − ] [OT] [IT Tail]              {− ]}
+<br>::= ε {.,)}
+<br>[OT] ::= [AT] [OT Tail] {∼, T, F,(}
+<br>[OT Tail] ::= ∨ [AT] [OT Tail] {∨}
+<br>::= ε {− ], .,)}
+<br>[AT] ::= [L] [AT Tail] {∼, T, F,(}
+<br>[AT Tail] ::= ∧ [L] [AT Tail] {∧}
+<br>::= ε {∨, − ], .,)}
+<br>[L] ::= [A] {T, F,(}
+<br>::= ∼ [L] {∼}
+<br>[A] ::= T {T}
+<br>::= F {F}
+<br>::= ( [IT] ) {(}
+</p>
+Syntactic Domains:
+<br>[B] : Bool stmt
+<br>[IT] : Imply term
+<br>[OT] : Or term
+<br>[AT] : And term
+<br>[IT Tail] : Imply tail
+<br>[OT Tail] : Or tail
+<br>[AT Tail] : And tail
+<br>[L] : Literal
+<br>[A] : Atom
 <p><b>Semantic Domain:</b>
 <br>b = {T.F} (Boolean values True and False)</p>
 
